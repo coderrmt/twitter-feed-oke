@@ -17,8 +17,6 @@ build:
 push-release:
   steps:
     - internal/docker-push:
-        cmd: echo $DOCKER_USERNAME
-        cmd: echo $OCI_AUTH_TOKEN
         username: $DOCKER_USERNAME
         password: $OCI_AUTH_TOKEN
         repository: $DOCKER_REGISTRY/$DOCKER_REPO
